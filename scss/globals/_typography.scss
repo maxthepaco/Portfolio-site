@@ -1,0 +1,32 @@
+@use '../util/' as u;
+
+h1, 
+h2, 
+h3 {
+    font-family: u.$fontPoppins;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+    font-size: u.rem(16);
+    font-family: u.$fontRubik;
+    font-weight: 400;
+}
+
+a, 
+a:visited, 
+a:active {
+    text-decoration: none;
+}

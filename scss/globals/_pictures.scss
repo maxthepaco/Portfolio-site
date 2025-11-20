@@ -1,0 +1,28 @@
+@use '../util/' as u;
+@use '../globals/colors' as c;
+
+.headshot {
+    width: u.rem(240);
+    box-shadow: 30px 30px var(--navtext-color), -30px -30px var(--navtext-color);
+
+    @include u.breakpoint(medium) {
+        width: u.rem(384);
+    }
+
+    @include u.breakpoint(large) {
+        width: u.rem(400);
+    }  
+}
+
+.projectPicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--navtext-color);
+    margin-bottom: 0.3rem;
+    //padding: 0.3rem;
+    //box-shadow: 0 0 0 0.3rem var(--navtext-color);
+
+}
