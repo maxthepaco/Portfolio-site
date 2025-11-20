@@ -33,6 +33,8 @@
     }
 
     &__main {
+        animation-name: fadeInmain;
+        animation-duration: 2s;        
         background-color:hsla(260, 40%, 58%, 0);
         
 
@@ -42,6 +44,8 @@
     }
 
     &__sidebar {
+        animation-name: fadeIn;
+        animation-duration: 1.5s;        
         text-align: center;
 
         @include u.breakpoint-down(small) {
@@ -244,8 +248,8 @@
         position: relative;
         height: 100vh;
         padding-top: 6rem;
-        animation-name: fadeIn;
-        animation-duration: 1.5s;
+        //animation-name: fadeIn;
+        //animation-duration: 1.5s;
 
         @include u.breakpoint(large) {
             margin-left: 1vw;
@@ -264,6 +268,11 @@
         0% {opacity: 0.01; transform: translateY(45%);}
         100% {opacity: 1; transform: translateY(0%);}        
     }
+
+    @keyframes fadeInmain {
+        0% {opacity: 0.01; transform: translateY(75%);}
+        100% {opacity: 1; transform: translateY(0%);}        
+    }    
 
     &--introSidebar {
         text-align: center;
