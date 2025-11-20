@@ -261,8 +261,8 @@
     }
 
     @keyframes fadeIn {
-        0% {opacity: 0.01; padding-top: 50vh;}
-        100% {opacity: 1; padding-top: 6rem;}        
+        0% {opacity: 0.01; transform: translateY(45%);}
+        100% {opacity: 1; transform: translateY(0%);}        
     }
 
     &--introSidebar {
