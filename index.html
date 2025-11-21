@@ -20,7 +20,7 @@
         <link rel="preload" href="/dist/styles.css" as="style">
         <link rel="stylesheet" href="/dist/styles.css">
 
-        <link rel="preload" href="/Pictures/maxheadshot.webp" as="image">
+        <link rel="preload" href="/Pictures/maxheadshot.webp" as="image" fetchpriority="high">
         <link rel="preload" href="/Fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
         <link rel="preload" href="/Fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin>
     </head>
@@ -84,7 +84,7 @@
 
                 </div>
                 <div class="grid__sidebar grid--introSidebar">
-                    <img src="/Pictures/maxheadshot.webp" alt="Max Dawson" fetchpriority="high" class="headshot">
+                    <img src="/Pictures/maxheadshot.webp" alt="Max Dawson" loading="eager" decoding="async" class="headshot">
                 </div>
             </div>
 
