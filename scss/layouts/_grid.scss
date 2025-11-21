@@ -248,8 +248,6 @@
         position: relative;
         height: 100vh;
         padding-top: 6rem;
-        //animation-name: fadeIn;
-        //animation-duration: 1.5s;
 
         @include u.breakpoint(large) {
             margin-left: 1vw;
@@ -411,8 +409,6 @@
     
     &--contactstextreplace {
         width: fit-content;
-        //margin-left: auto;
-        //margin-right: auto;
         opacity: 1;
         transition: all 0.5s ease;
         transform: translateX(-50%) translateY(-75%);
@@ -434,7 +430,6 @@
         }
     } 
     
-    // -100, -150, -100
 
     &--contactstextmain, &--contactstextmainli {
         font-family: u.$fontRubik;
@@ -475,13 +470,6 @@
             color: var(--text-color);
             cursor: pointer; 
 
-            /*
-            .grid--contactstextmain {
-                opacity: 0;
-                transform: translateX(200%);
-                overflow-x: hidden;
-            }
-            */
             
             .grid--contactsEmailResumereplace {
                 opacity: 1;
